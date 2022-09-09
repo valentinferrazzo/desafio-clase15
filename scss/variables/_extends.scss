@@ -1,0 +1,11 @@
+%estilo {
+    background-color: rgb(255, 147, 147);
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+@mixin estilo-mixin ($size){
+font-size: $size;
+background-color: rgb(235, 235, 235);
+text-align: center;
+}

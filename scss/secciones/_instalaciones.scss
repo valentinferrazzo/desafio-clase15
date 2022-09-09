@@ -1,0 +1,29 @@
+.imagen-escrita1 {
+width: 100%;
+}
+.contenedor-imagen-escrita{
+width: 100%;
+position: relative;
+
+}
+.contenedor-imagen-escrita img{
+width: 100vw;
+}
+.capa-ins{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+position: absolute;
+top: 0;
+color: black;
+background-color: rgba(255, 255, 255, 0.301);
+height: 100%;
+font-weight: 800;
+width: 100%;
+}
+.h1-ins {
+    @extend %estilo;
+}
+.h2-ins {
+    @include estilo-mixin (20px);
+}

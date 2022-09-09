@@ -1,0 +1,241 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+/* css del index */
+.contenedorimg {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2vw;
+  height: 1100px;
+  flex-direction: column;
+  background-color: black; }
+  .contenedorimg figure {
+    position: relative;
+    height: 40vh;
+    width: 100vw;
+    overflow: hidden;
+    cursor: pointer;
+    border-top: 15px black solid; }
+  .contenedorimg img {
+    width: 100%;
+    height: 100%; }
+
+.capa1 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.568);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: impact; }
+
+.contenedorimg figure:hover > .capa1 {
+  opacity: 1;
+  visibility: visible; }
+
+.resetlink {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 30px;
+  font-style: none; }
+  .resetlink:hover {
+    color: #1f1f1f; }
+
+.h1-ins, .intro-tienda, input, textarea {
+  background-color: #ff9393;
+  color: black;
+  font-size: 30px;
+  text-align: center; }
+
+.footer1 {
+  display: flex;
+  flex-direction: column; }
+
+.footer2 {
+  display: flex; }
+
+.linkf {
+  text-decoration: none;
+  font-style: none;
+  color: black;
+  font-size: 25px;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  top: -3px; }
+
+.fo1 {
+  font-size: 25px;
+  color: black;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif; }
+
+.numero {
+  font-size: 20px;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif; }
+
+/* css de "planes y ofertas" */
+.container13 {
+  width: 100%;
+  display: grid;
+  background-color: #272727;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  justify-items: center;
+  justify-content: center;
+  grid-template-areas: "planesyofertas" "plan1" "plan2" "plan3" "plan4"; }
+
+.planesyofertas {
+  grid-area: planesyofertas;
+  color: white; }
+
+.plan1 {
+  grid-area: plan1; }
+
+.plan2 {
+  grid-area: plan2; }
+
+.plan3 {
+  grid-area: plan3; }
+
+.plan4 {
+  grid-area: plan4; }
+
+.imagen-escrita1 {
+  width: 100%; }
+
+.contenedor-imagen-escrita {
+  width: 100%;
+  position: relative; }
+
+.contenedor-imagen-escrita img {
+  width: 100vw; }
+
+.capa-ins {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.301);
+  height: 100%;
+  font-weight: 800;
+  width: 100%; }
+
+.h2-ins {
+  font-size: 20px;
+  background-color: #ebebeb;
+  text-align: center; }
+
+.grilla-tienda {
+  display: grid;
+  grid-template-columns: repeat(3, 33vw);
+  grid-template-rows: .2fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "intro-tienda intro-tienda intro-tienda " "productos productos productos " "productos productos productos "; }
+
+.intro-tienda {
+  grid-area: intro-tienda;
+  text-align: center;
+  border: 5px black solid;
+  border-radius: 5px; }
+
+.productos {
+  grid-area: productos;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+label {
+  display: block;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  background-color: white;
+  border: 3px black solid;
+  border-radius: 5px;
+  width: 80%; }
+
+.principal {
+  display: block;
+  margin: 0 auto;
+  width: 510px; }
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  font-size: 30px;
+  height: 60%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px black solid;
+  border-radius: 10px; }
+
+input, textarea {
+  width: 90%;
+  border: 3px black solid;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 30px;
+  color: #ffffff; }
+
+textarea {
+  height: 150px;
+  width: 90%;
+  border: 3px black solid;
+  border-radius: 5px; }
+
+#submit {
+  width: 100px;
+  height: 70px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white; }
+
+::placeholder {
+  color: black; }
+
+.container-form {
+  background-color: lightslategrey;
+  height: 1000px; }
+
+@media (min-width: 1024px) {
+  .contenedorimg {
+    height: 1700px; }
+  .contenedorimg figure {
+    height: 70vh; }
+  .resetlink {
+    font-size: 70px; }
+  .container13 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "planesyofertas planesyofertas" "plan1 plan2" "plan3 plan4"; }
+  .capa-ins {
+    font-size: 30px; }
+  .productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: normal;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%; }
+  .productos .card {
+    height: 100%;
+    display: flex; }
+  .grilla-tienda {
+    display: grid;
+    justify-content: center; } }

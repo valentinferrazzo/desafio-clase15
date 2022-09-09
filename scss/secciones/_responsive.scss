@@ -1,0 +1,40 @@
+@media (min-width: 1024px) {
+    .contenedorimg {
+        height: 1700px;
+    }
+    .contenedorimg figure {
+        height: 70vh;
+    }
+    .resetlink {
+        font-size: 70px;
+    }
+    .container13 {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "planesyofertas planesyofertas"
+        "plan1 plan2"
+        "plan3 plan4";
+    }
+    .capa-ins{
+        font-size: 30px;
+    }
+    .productos {
+        display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-content: normal;
+       justify-content: center;
+       align-items: flex-end;
+       height: 100%;
+ 
+        }
+    .productos .card {
+        height: 100%;
+        display: flex;
+    }
+        .grilla-tienda {  display: grid;
+            justify-content: center;
+            
+        }
+}
